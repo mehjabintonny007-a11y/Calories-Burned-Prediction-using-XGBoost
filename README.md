@@ -4,7 +4,7 @@ Project Overview
 Calories burned during exercise depends on multiple physiological factors like age, weight, height, heart rate, exercise duration, and body temperature.
 This project aims to predict the number of calories burned based on these features using XGBoost Regressor, a gradient boosting machine learning model ideal for complex interactions.
 
-Dataset
+Dataset🧾
 Two CSV files are used:
 
 exercise.csv – contains features like:
@@ -24,9 +24,9 @@ Calories – calories burned during exercise
 
 The datasets are combined into one dataframe using User_ID to align the features with target values.
 
-Data Preprocessing
+Data Preprocessing🧹
 
-Gender Encoding:
+Gender Encoding:🚻
 male → 0, female → 1 for numeric compatibility with XGBoost.
 
 Missing Values:
@@ -36,7 +36,7 @@ Features & Target:
 X = calories_data.drop(['User_ID','Calories'], axis=1)
 Y = calories_data['Calories']
 
-Exploratory Data Analysis (EDA)
+Exploratory Data Analysis (EDA)📊
 
 Numerical Features
 Age, Height, Weight, Duration, Heart Rate, Body Temperature distributions visualized using matplotlib and seaborn.
